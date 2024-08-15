@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "dogumTarihi": "24.03.1996",
+        "sehir": "Ankara",
+        "egitim": "Hacettepe Ünv. Biyoloji Lisans, 2016",
+        "rol": "Frontend, UI"
+    },
+    "projects": [
+        {
+            "id": 1,
+            "baslik": "Workintech",
+            "aciklama": "A simple, customizable, minimal setup cookie plugin...",
+            "teknoloji": [
+                "react",
+                "redux",
+                "vercel"
+            ],
+            "linkler": {
+                "site": "https://workintech.com",
+                "github": "https://github.com/workintech"
+            }
+        },
+        {
+            "id": 2,
+            "baslik": "Journey",
+            "aciklama": "A simple, customizable, minimal setup cookie plugin...",
+            "teknoloji": [
+                "react",
+                "redux",
+                "vercel"
+            ],
+            "linkler": {
+                "site": "#",
+                "github": "#"
+            }
+        }
+    ]
+}
