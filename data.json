@@ -3,13 +3,14 @@
         "dogumTarihi": "24.03.1996",
         "sehir": "Ankara",
         "egitim": "Hacettepe Ünv. Biyoloji Lisans, 2016",
-        "rol": "Frontend, UI"
+        "rol": "Frontend, UI",
+        "hakkimda": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! "
     },
     "projects": [
         {
             "id": 1,
             "baslik": "Workintech",
-            "aciklama": "A simple, customizable, minimal setup cookie plugin...",
+            "aciklama": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             "teknoloji": [
                 "react",
                 "redux",
@@ -23,7 +24,7 @@
         {
             "id": 2,
             "baslik": "Journey",
-            "aciklama": "A simple, customizable, minimal setup cookie plugin...",
+            "aciklama": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
             "teknoloji": [
                 "react",
                 "redux",

@@ -1,21 +1,30 @@
-const Header = () => (
-    <section className="flex h-screen">
-        <div className="flex-1 relative">
-            {/* Sol bölüm (Mavi) */}
-            <div className="absolute inset-y-0 left-0 w-7/12 bg-blue-700 flex items-center p-10 text-white">
-                <div>
-                    <a href="#" className="text-[#CA0909]">TÜRKÇE'YE GEÇ</a>
-                    <h2 className="text-[#CBF281] text-xl font-bold">almila</h2>
+import React, { useState } from 'react';
 
-                    <h1 className="text-[#CBF281] text-5xl font-bold leading-tight">
-                        I am a Frontend <br /> Developer...
+const Header = () => {
+    const [isToggled, setIsToggled] = useState(false);
+
+    const toggleSwitch = () => {
+        setIsToggled(!isToggled);
+    };
+
+    return (
+        <section className="flex relative">
+            {/* Sol Bölüm */}
+            <div className="w-9/12 bg-blue-700 text-white pl-56">
+                <div className='p-5'>
+                    <a href="#" className="text-lime-300 float-right text-sm font-bold mt-1 mr-3 tracking-widest">TÜRKÇE'YE GEÇ</a>
+                    <h3 className="text-lime-300 text-lg mt-8 ml-16 font-bold">almila</h3>
+                </div>
+                <div className="p-20">
+                    <h1 className="text-lime-300 text-6xl font-bold leading-tight mt-10 w-6/12">
+                        I am a Frontend Developer...
                     </h1>
-                    <p className="mt-4 text-lg">
+                    <p className="mt-8 text-xl w-6/12">
                         ...who likes to craft solid and scalable frontend products with great user experiences.
                     </p>
-                    <div className="mt-6 flex space-x-4">
+                    <div className="mt-6 flex gap-5">
                         <button>
-                            <img src="../src/assets/Github-Button.png" alt="GitHub" />
+                            <img src="../src/assets/Github-Button.png" alt="Github" />
                         </button>
                         <button>
                             <img src="../src/assets/Linkedin-Button.png" alt="LinkedIn" />
@@ -24,23 +33,31 @@ const Header = () => (
                 </div>
             </div>
 
-            {/* Sağ bölüm (Sarı) */}
-            <div className="absolute inset-y-0 right-0 w-5/12 bg-lime-400 flex items-center justify-end p-10">
-                <div className="relative w-full h-full flex justify-center">
-                    <div className="absolute top-4 right-4 flex items-center space-x-2">
-                        <button className="bg-gray-200 p-1 rounded-full">
-                            <span className="text-sm">DARK MODE</span>
-                        </button>
-                    </div>
-                    <img
-                        src="../src/assets/hero-right.png"
-                        className="w-3/4 h-auto"
-                        style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
-                    />
+            {/* Sağ Bölüm */}
+            <div className="w-3/12 bg-lime-400 relative flex p-5 ">
+                <div
+                    onClick={toggleSwitch}
+                    className={`w-16 h-8 flex items-center rounded-full p-1 cursor-pointer ${isToggled ? 'bg-purple-700' : 'bg-gray-300'}`}
+                >
+                    <div
+                        className={`bg-yellow-300 w-6 h-6 rounded-full shadow-md transform duration-300 ease-in-out ${isToggled ? 'translate-x-8' : 'translate-x-0'}`}
+                    ></div>
                 </div>
+                <span className={`mt-1 ml-3 font-bold text-sm  ${isToggled ? 'text-purple-700' : 'text-blue-800'}`}>
+                    DARK MODE
+                </span>
             </div>
-        </div>
-    </section>
-);
+
+            {/* Ortada ki Resim */}
+            <div className="absolute left-[66%] top-20">
+                <img
+                    src="../src/assets/hero-right.png"
+                    alt="Profile"
+                    className="w-4/5 h-auto rounded-lg"
+                />
+            </div>
+        </section >
+    );
+};
 
 export default Header;

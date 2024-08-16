@@ -1,12 +1,11 @@
-import "./index.css"
-import Header from './components/Header'
-import Skills from './components/Skills'
-import Profile from "./components/Profile"
-import Footer from './components/Footer'
-import React, { useEffect, useState } from "react"
+import "./index.css";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
+import Profile from "./components/Profile";
+import Footer from "./components/Footer";
+import React, { useEffect, useState } from "react";
 import data from "../data.json";
-import Projects from "./components/Projects"
-
+import Projects from "./components/Projects";
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
   }, []);
 
   return (
-
     <>
       <Header />
       <Skills />
@@ -32,4 +30,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
