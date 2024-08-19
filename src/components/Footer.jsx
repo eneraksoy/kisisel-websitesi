@@ -28,7 +28,7 @@ const Footer = ({ contact = {} }) => {
                 {contact.email}
             </button>
             <button className="flex justify-center mx-auto mt-4">
-                <img src="../src/assets/socials.png" />
+                <img src="../public/assets/socials.png" />
             </button>
         </footer>
     );

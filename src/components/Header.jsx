@@ -29,10 +29,10 @@ const Header = ({ toggleDarkMode }) => {
                     </p>
                     <div className="mt-6 flex gap-5">
                         <button>
-                            <img src="../src/assets/Github-Button.png" />
+                            <img src="../public/assets/Github-Button.png" />
                         </button>
                         <button>
-                            <img src="../src/assets/Linkedin-Button.png" />
+                            <img src="../public/assets/Linkedin-Button.png" />
                         </button>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const Header = ({ toggleDarkMode }) => {
             {/* Ortada ki Resim */}
             <div className="absolute left-[66%] top-20">
                 <img
-                    src="../src/assets/hero-right.png"
+                    src="../public/assets/hero-right.png"
                     className="w-4/5 rounded-lg"
                 />
             </div>
