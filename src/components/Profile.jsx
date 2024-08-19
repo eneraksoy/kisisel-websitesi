@@ -29,7 +29,7 @@ const Profile = ({ profile }) => {
                 </div>
 
                 <div className="">
-                    <img src="../public/assets/image 2.png" className="rounded-lg object-cover" />
+                    <img src="/assets/image 2.png" className="rounded-lg object-cover" />
                 </div>
 
                 <div className="w-2/4">

@@ -4,12 +4,12 @@ const Skills = () => {
     const { language } = useLanguage();
 
     const skills = [
-        "../public/assets/js.png",
-        "../public/assets/node.png",
-        "../public/assets/react.png",
-        "../public/assets/vscode.png",
-        "../public/assets/redux.png",
-        "../public/assets/figma.png"
+        "/assets/js.png",
+        "/assets/node.png",
+        "/assets/react.png",
+        "/assets/vscode.png",
+        "/assets/redux.png",
+        "/assets/figma.png"
     ];
 
     return (

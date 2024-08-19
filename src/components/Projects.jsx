@@ -3,8 +3,8 @@ import { useLanguage } from "../context/LanguageContext";
 const Projects = ({ projects }) => {
     const { language } = useLanguage();
     const images = [
-        "../public/assets/Rectangle 41.png",
-        "../public/assets/Rectangle 42.png"
+        "/assets/Rectangle 41.png",
+        "/assets/Rectangle 42.png"
     ];
 
     return (
