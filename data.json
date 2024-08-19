@@ -17,8 +17,8 @@
                 "vercel"
             ],
             "linkler": {
-                "site": "https://workintech.com",
-                "github": "https://github.com/workintech"
+                "site": "#",
+                "github": "#"
             }
         },
         {
